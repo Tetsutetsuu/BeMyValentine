@@ -1,0 +1,23 @@
+/* This makes the container flexible for any screen size */
+.container {
+    width: 90%;
+    max-width: 600px; /* Prevents it from getting too wide on a tablet */
+    padding: 20px;
+    background: rgb(253, 192, 233); /* Semi-transparent white box */
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Make images scale down on smaller screens */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Bigger buttons for easy tapping */
+button {
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    touch-action: manipulation; /* Prevents accidental zooming when tapping fast */
+}
